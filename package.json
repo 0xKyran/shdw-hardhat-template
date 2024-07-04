@@ -1,0 +1,29 @@
+{
+  "name": "shdw-hardhat-template",
+  "version": "1.0.0",
+  "description": "Hardhat template for SHDW chain",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat ignition deploy ignition/modules/MyContract.js --network custom",
+    "remove": "rm -rf artifacts cache node_modules ignition/deployments"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xKyran/shdw-hardhat-template.git"
+  },
+  "author": "0xKyran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xKyran/shdw-hardhat-template/issues"
+  },
+  "homepage": "https://github.com/0xKyran/shdw-hardhat-template#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.6",
+    "hardhat-gas-reporter": "^2.2.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0"
+  }
+}
